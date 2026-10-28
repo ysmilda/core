@@ -770,6 +770,9 @@ boto3==1.42.97
 # homeassistant.components.bring
 bring-api==1.1.2
 
+# homeassistant.components.brink_flair
+brink-flair-modbus==0.6.0
+
 # homeassistant.components.broadlink
 broadlink-async==1.1.1
 

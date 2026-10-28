@@ -134,6 +134,7 @@ homeassistant.components.bond.*
 homeassistant.components.bosch_alarm.*
 homeassistant.components.braviatv.*
 homeassistant.components.bring.*
+homeassistant.components.brink_flair.*
 homeassistant.components.brother.*
 homeassistant.components.browser.*
 homeassistant.components.bryant_evolution.*

@@ -1,0 +1,601 @@
+# serializer version: 1
+# name: test_switches[switch.brink_flair_300_analogue_input_1_enabled-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_analogue_input_1_enabled',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Analogue input 1 enabled',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Analogue input 1 enabled',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_analogue_input_1_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_analogue_input_1_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_analogue_input_1_enabled-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Analogue input 1 enabled',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_analogue_input_1_enabled',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_analogue_input_2_enabled-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_analogue_input_2_enabled',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Analogue input 2 enabled',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Analogue input 2 enabled',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_analogue_input_2_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_analogue_input_2_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_analogue_input_2_enabled-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Analogue input 2 enabled',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_analogue_input_2_enabled',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_bypass_boost-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_bypass_boost',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Bypass boost',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Bypass boost',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_bypass_boost',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_bypass_boost',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_bypass_boost-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Bypass boost',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_bypass_boost',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_co2_sensor_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_co2_sensor_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'CO₂ sensor mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'CO₂ sensor mode',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_co2_sensor_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_co2_sensor_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_co2_sensor_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 CO₂ sensor mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_co2_sensor_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_cv_exhaust_connected-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_cv_exhaust_connected',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'CV exhaust connected',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'CV exhaust connected',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_cv_connected',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_cv_connected',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_cv_exhaust_connected-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 CV exhaust connected',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_cv_exhaust_connected',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_digital_input_1_normally_closed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_digital_input_1_normally_closed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 1 normally closed',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 1 normally closed',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_1_closed',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_1_closed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_digital_input_1_normally_closed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 1 normally closed',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_digital_input_1_normally_closed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_digital_input_2_normally_closed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_digital_input_2_normally_closed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 2 normally closed',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 2 normally closed',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_2_closed',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_2_closed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_digital_input_2_normally_closed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 2 normally closed',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_digital_input_2_normally_closed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_display_acts_as_switch-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_display_acts_as_switch',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Display acts as switch',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Display acts as switch',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_display_as_switch',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_display_as_switch',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_display_acts_as_switch-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Display acts as switch',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_display_acts_as_switch',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_geo_heat_exchanger-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_geo_heat_exchanger',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Geo heat-exchanger',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Geo heat-exchanger',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_geo_exchanger',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_geo_exchanger',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_geo_heat_exchanger-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Geo heat-exchanger',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_geo_heat_exchanger',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_humidity_sensor_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_humidity_sensor_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Humidity sensor mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Humidity sensor mode',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_rht_sensor_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_rht_sensor_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_humidity_sensor_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Humidity sensor mode',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_humidity_sensor_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_imbalance_allowed-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'switch.brink_flair_300_imbalance_allowed',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Imbalance allowed',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Imbalance allowed',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_imbalance_allowed',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_imbalance_allowed',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_imbalance_allowed-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Imbalance allowed',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_imbalance_allowed',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_standby-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'switch',
+    'entity_category': None,
+    'entity_id': 'switch.brink_flair_300_standby',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Standby',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Standby',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'standby',
+    'unique_id': '01JBRINKFLAIR0000000000000_standby',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_switches[switch.brink_flair_300_standby-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Standby',
+    }),
+    'context': <ANY>,
+    'entity_id': 'switch.brink_flair_300_standby',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---

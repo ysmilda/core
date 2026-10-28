@@ -1,0 +1,59 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "status_filter_dirty": {
+        "default": "mdi:air-filter",
+        "state": {
+          "on": "mdi:filter-remove"
+        }
+      }
+    },
+    "button": {
+      "reset_filter": {
+        "default": "mdi:filter-remove"
+      }
+    },
+    "select": {
+      "settings_bypass_mode": {
+        "default": "mdi:valve"
+      },
+      "settings_control_mode": {
+        "default": "mdi:tune-variant"
+      },
+      "settings_level": {
+        "default": "mdi:fan",
+        "state": {
+          "absence": "mdi:fan-off",
+          "high": "mdi:fan-speed-3",
+          "low": "mdi:fan-speed-1",
+          "medium": "mdi:fan-speed-2"
+        }
+      }
+    },
+    "sensor": {
+      "device_exchange_filter_in": {
+        "default": "mdi:air-filter"
+      },
+      "status_bypass_status": {
+        "default": "mdi:valve"
+      },
+      "status_operation_mode": {
+        "default": "mdi:hvac"
+      },
+      "status_system_error": {
+        "default": "mdi:alert-circle",
+        "state": {
+          "no_error": "mdi:check-circle"
+        }
+      }
+    },
+    "switch": {
+      "settings_bypass_boost": {
+        "default": "mdi:valve-open"
+      },
+      "standby": {
+        "default": "mdi:power-standby"
+      }
+    }
+  }
+}

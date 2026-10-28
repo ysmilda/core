@@ -1,0 +1,667 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "link_settings_conflict": "This device is already used by another integration with different connection settings. Use the same settings here."
+    },
+    "step": {
+      "discovered": {
+        "description": "Connection verified, found **{model}** (device type `{device_type}`).",
+        "title": "Device discovered"
+      },
+      "modbus_tcp": {
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]",
+          "port": "[%key:common::config_flow::data::port%]",
+          "unit_id": "Modbus unit"
+        },
+        "data_description": {
+          "host": "The hostname or IP address of the Modbus gateway or device.",
+          "port": "The TCP port the Modbus gateway listens on (default 502).",
+          "unit_id": "The Brink Flair's Modbus station address (default 20)."
+        },
+        "title": "Modbus TCP"
+      },
+      "reconfigure": {
+        "description": "Update your Brink Flair connection settings.",
+        "menu_options": {
+          "modbus_tcp": "Modbus TCP",
+          "serial": "Serial (including serial proxies and networked connections)"
+        }
+      },
+      "select_model": {
+        "data": {
+          "model": "Model"
+        },
+        "data_description": {
+          "model": "The model number printed on the unit. It sets the maximum airflow the integration allows."
+        },
+        "description": "Connection verified, but device type `{device_type}` isn't mapped to a model yet. Select the model of your unit to set the correct airflow limits. You can also [report this device type]({report_url}) or [open a pull request]({edit_url}) to add the mapping.",
+        "title": "Select model"
+      },
+      "serial": {
+        "data": {
+          "baudrate": "Baud rate",
+          "device": "[%key:common::config_flow::data::device%]",
+          "parity": "Parity",
+          "unit_id": "Modbus unit"
+        },
+        "data_description": {
+          "baudrate": "The serial baud rate the unit communicates at (default 19200).",
+          "device": "The serial port or networked serial proxy the unit is connected to, e.g. /dev/ttyUSB0.",
+          "parity": "The parity the unit communicates with.",
+          "unit_id": "The Brink Flair's Modbus address (default 20)."
+        },
+        "title": "Serial connection"
+      },
+      "user": {
+        "description": "How is the Modbus network connected?",
+        "menu_options": {
+          "modbus_tcp": "Modbus TCP",
+          "serial": "Serial (including serial proxies and networked connections)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "status_filter_dirty": {
+        "name": "Filter dirty"
+      }
+    },
+    "button": {
+      "reset_filter": {
+        "name": "Filter reset"
+      }
+    },
+    "number": {
+      "settings_analogue_input_1_vmax": {
+        "name": "Analogue input 1 maximum voltage"
+      },
+      "settings_analogue_input_1_vmin": {
+        "name": "Analogue input 1 minimum voltage"
+      },
+      "settings_analogue_input_2_vmax": {
+        "name": "Analogue input 2 maximum voltage"
+      },
+      "settings_analogue_input_2_vmin": {
+        "name": "Analogue input 2 minimum voltage"
+      },
+      "settings_bypass_boost_position": {
+        "name": "Bypass boost position"
+      },
+      "settings_bypass_from_dwelling": {
+        "name": "Bypass temperature inside"
+      },
+      "settings_bypass_from_outside": {
+        "name": "Bypass temperature outside"
+      },
+      "settings_bypass_hysteresis": {
+        "name": "Bypass hysteresis"
+      },
+      "settings_co2_1_high_level": {
+        "name": "CO₂ sensor 1 high level"
+      },
+      "settings_co2_1_low_level": {
+        "name": "CO₂ sensor 1 low level"
+      },
+      "settings_co2_2_high_level": {
+        "name": "CO₂ sensor 2 high level"
+      },
+      "settings_co2_2_low_level": {
+        "name": "CO₂ sensor 2 low level"
+      },
+      "settings_co2_3_high_level": {
+        "name": "CO₂ sensor 3 high level"
+      },
+      "settings_co2_3_low_level": {
+        "name": "CO₂ sensor 3 low level"
+      },
+      "settings_co2_4_high_level": {
+        "name": "CO₂ sensor 4 high level"
+      },
+      "settings_co2_4_low_level": {
+        "name": "CO₂ sensor 4 low level"
+      },
+      "settings_desired_flow_rate": {
+        "name": "Desired flow rate"
+      },
+      "settings_filter_change_days": {
+        "name": "Filter change days"
+      },
+      "settings_flow_0": {
+        "name": "Flow rate step 0"
+      },
+      "settings_flow_1": {
+        "name": "Flow rate step 1"
+      },
+      "settings_flow_2": {
+        "name": "Flow rate step 2"
+      },
+      "settings_flow_3": {
+        "name": "Flow rate step 3"
+      },
+      "settings_frost_control_temperature": {
+        "name": "Frost control temperature"
+      },
+      "settings_frost_minimum_inlet_temperature": {
+        "name": "Frost minimum inlet temperature"
+      },
+      "settings_geo_maximum_temperature": {
+        "name": "Geo maximum temperature"
+      },
+      "settings_geo_minimum_temperature": {
+        "name": "Geo minimum temperature"
+      },
+      "settings_imbalance_exhaust": {
+        "name": "Exhaust imbalance"
+      },
+      "settings_imbalance_intake": {
+        "name": "Intake imbalance"
+      },
+      "settings_imbalance_value": {
+        "name": "Imbalance percentage"
+      },
+      "settings_postheater_setpoint": {
+        "name": "Post-heater setpoint"
+      },
+      "settings_pwm_exhaust_0": {
+        "name": "Exhaust fan PWM step 0"
+      },
+      "settings_pwm_exhaust_1": {
+        "name": "Exhaust fan PWM step 1"
+      },
+      "settings_pwm_exhaust_2": {
+        "name": "Exhaust fan PWM step 2"
+      },
+      "settings_pwm_exhaust_3": {
+        "name": "Exhaust fan PWM step 3"
+      },
+      "settings_pwm_inlet_0": {
+        "name": "Inlet fan PWM step 0"
+      },
+      "settings_pwm_inlet_1": {
+        "name": "Inlet fan PWM step 1"
+      },
+      "settings_pwm_inlet_2": {
+        "name": "Inlet fan PWM step 2"
+      },
+      "settings_pwm_inlet_3": {
+        "name": "Inlet fan PWM step 3"
+      },
+      "settings_rht_sensor_sensitivity": {
+        "name": "Humidity sensor sensitivity"
+      },
+      "settings_switch_default_position": {
+        "name": "Switch default position"
+      }
+    },
+    "select": {
+      "settings_bypass_mode": {
+        "name": "Bypass mode",
+        "state": {
+          "auto": "Auto",
+          "closed": "Closed",
+          "open": "Open"
+        }
+      },
+      "settings_control_mode": {
+        "name": "Control mode",
+        "state": {
+          "flow": "Flow",
+          "off": "Off",
+          "step": "Step"
+        }
+      },
+      "settings_date_format": {
+        "name": "Date format",
+        "state": {
+          "dd_mm_yyyy": "DD-MM-YYYY",
+          "mm_dd_yyyy": "MM-DD-YYYY"
+        }
+      },
+      "settings_digital_input_1_exhaust_fan": {
+        "name": "Digital input 1 exhaust fan",
+        "state": {
+          "absolute_maximum_flow": "Absolute maximum flow",
+          "absolute_minimum_flow": "Absolute minimum flow",
+          "fan_off": "Fan off",
+          "position_switch": "Position switch",
+          "predefined_value_mode_1": "Predefined value mode 1",
+          "predefined_value_mode_2": "Predefined value mode 2",
+          "predefined_value_mode_3": "Predefined value mode 3",
+          "unchanged": "Unchanged"
+        }
+      },
+      "settings_digital_input_1_function": {
+        "name": "Digital input 1 function",
+        "state": {
+          "bypass_control": "Bypass control",
+          "external_valve_control": "External valve control",
+          "off": "Off",
+          "on": "On",
+          "on_if_bypass_open": "On if bypass open"
+        }
+      },
+      "settings_digital_input_1_supply_fan": {
+        "name": "Digital input 1 supply fan",
+        "state": {
+          "absolute_maximum_flow": "Absolute maximum flow",
+          "absolute_minimum_flow": "Absolute minimum flow",
+          "fan_off": "Fan off",
+          "position_switch": "Position switch",
+          "predefined_value_mode_1": "Predefined value mode 1",
+          "predefined_value_mode_2": "Predefined value mode 2",
+          "predefined_value_mode_3": "Predefined value mode 3",
+          "unchanged": "Unchanged"
+        }
+      },
+      "settings_digital_input_2_exhaust_fan": {
+        "name": "Digital input 2 exhaust fan",
+        "state": {
+          "absolute_maximum_flow": "Absolute maximum flow",
+          "absolute_minimum_flow": "Absolute minimum flow",
+          "fan_off": "Fan off",
+          "position_switch": "Position switch",
+          "predefined_value_mode_1": "Predefined value mode 1",
+          "predefined_value_mode_2": "Predefined value mode 2",
+          "predefined_value_mode_3": "Predefined value mode 3",
+          "unchanged": "Unchanged"
+        }
+      },
+      "settings_digital_input_2_function": {
+        "name": "Digital input 2 function",
+        "state": {
+          "bypass_control": "Bypass control",
+          "external_valve_control": "External valve control",
+          "off": "Off",
+          "on": "On",
+          "on_if_bypass_open": "On if bypass open"
+        }
+      },
+      "settings_digital_input_2_supply_fan": {
+        "name": "Digital input 2 supply fan",
+        "state": {
+          "absolute_maximum_flow": "Absolute maximum flow",
+          "absolute_minimum_flow": "Absolute minimum flow",
+          "fan_off": "Fan off",
+          "position_switch": "Position switch",
+          "predefined_value_mode_1": "Predefined value mode 1",
+          "predefined_value_mode_2": "Predefined value mode 2",
+          "predefined_value_mode_3": "Predefined value mode 3",
+          "unchanged": "Unchanged"
+        }
+      },
+      "settings_external_heater_mode": {
+        "name": "External heater mode",
+        "state": {
+          "not_available": "Not available",
+          "post_heater": "Post-heater",
+          "pre_heater": "Pre-heater"
+        }
+      },
+      "settings_flow_type": {
+        "name": "Fan control method",
+        "state": {
+          "constant_flow": "Constant flow",
+          "constant_mass_flow": "Constant mass flow",
+          "constant_pwm": "Constant PWM"
+        }
+      },
+      "settings_geo_valve_default_position": {
+        "name": "Geo valve default position",
+        "state": {
+          "closed": "Closed",
+          "open": "Open"
+        }
+      },
+      "settings_geo_valve_output": {
+        "name": "Geo valve output",
+        "state": {
+          "analogue_output_1": "Analogue output 1",
+          "analogue_output_2": "Analogue output 2",
+          "relay_output_1": "Relay output 1",
+          "relay_output_2": "Relay output 2"
+        }
+      },
+      "settings_language": {
+        "name": "Unit language",
+        "state": {
+          "dutch": "Dutch",
+          "english": "English"
+        }
+      },
+      "settings_level": {
+        "name": "Ventilation level",
+        "state": {
+          "absence": "Absence",
+          "high": "High",
+          "low": "Low",
+          "medium": "Medium"
+        }
+      },
+      "settings_signal_output_function": {
+        "name": "Signal output function",
+        "state": {
+          "error_status": "Error status",
+          "filter_warning": "Filter warning",
+          "filter_warning_and_error_status": "Filter warning and error status",
+          "off": "Off"
+        }
+      },
+      "settings_time_notation": {
+        "name": "Time notation",
+        "state": {
+          "hour_12": "12-hour",
+          "hour_24": "24-hour"
+        }
+      }
+    },
+    "sensor": {
+      "device_exchange_filter_in": {
+        "name": "Days until filter change"
+      },
+      "measurements_bypass_step_position": {
+        "name": "Bypass step position"
+      },
+      "measurements_current_date": {
+        "name": "Current date"
+      },
+      "measurements_current_operating_time": {
+        "name": "Operating time"
+      },
+      "measurements_current_time": {
+        "name": "Current time"
+      },
+      "measurements_dwelling_temperature": {
+        "name": "Dwelling temperature"
+      },
+      "measurements_exhaust_anemometer_rpm": {
+        "name": "Exhaust anemometer speed"
+      },
+      "measurements_exhaust_fan_rpm": {
+        "name": "Exhaust fan speed"
+      },
+      "measurements_exhaust_mass_flow": {
+        "name": "Exhaust mass flow"
+      },
+      "measurements_exhaust_pressure": {
+        "name": "Exhaust pressure"
+      },
+      "measurements_exhaust_relative_humidity": {
+        "name": "Exhaust humidity"
+      },
+      "measurements_exhaust_temperature": {
+        "name": "Exhaust temperature"
+      },
+      "measurements_exhaust_volume": {
+        "name": "Exhaust volume"
+      },
+      "measurements_filter_used_hours": {
+        "name": "Filter hours used"
+      },
+      "measurements_filter_used_volume": {
+        "name": "Filter used volume"
+      },
+      "measurements_frost_fan_reduction": {
+        "name": "Frost fan reduction"
+      },
+      "measurements_frost_heater_setpoint": {
+        "name": "Frost heater setpoint"
+      },
+      "measurements_outside_temperature": {
+        "name": "Outside temperature"
+      },
+      "measurements_preheater_capacity": {
+        "name": "Preheater capacity"
+      },
+      "measurements_rht_humidity": {
+        "name": "Ambient humidity"
+      },
+      "measurements_setpoint_exhaust_volume": {
+        "name": "Exhaust volume setpoint"
+      },
+      "measurements_setpoint_supply_volume": {
+        "name": "Supply volume setpoint"
+      },
+      "measurements_supply_anemometer_rpm": {
+        "name": "Supply anemometer speed"
+      },
+      "measurements_supply_fan_rpm": {
+        "name": "Supply fan speed"
+      },
+      "measurements_supply_mass_flow": {
+        "name": "Supply mass flow"
+      },
+      "measurements_supply_pressure": {
+        "name": "Supply pressure"
+      },
+      "measurements_supply_relative_humidity": {
+        "name": "Supply humidity"
+      },
+      "measurements_supply_temperature": {
+        "name": "Supply temperature"
+      },
+      "measurements_supply_volume": {
+        "name": "Supply volume"
+      },
+      "measurements_total_flow": {
+        "name": "Total flow"
+      },
+      "settings_modbus_parity": {
+        "name": "Modbus parity",
+        "state": {
+          "even": "Even",
+          "none": "None",
+          "odd": "Odd"
+        }
+      },
+      "settings_modbus_slave_address": {
+        "name": "Modbus slave address"
+      },
+      "settings_modbus_speed": {
+        "name": "Modbus baud rate",
+        "state": {
+          "baud_115200": "115200 baud",
+          "baud_1200": "1200 baud",
+          "baud_19200": "19200 baud",
+          "baud_2400": "2400 baud",
+          "baud_38400": "38400 baud",
+          "baud_4800": "4800 baud",
+          "baud_56000": "56000 baud",
+          "baud_9600": "9600 baud"
+        }
+      },
+      "status_active_incident": {
+        "name": "Active incident"
+      },
+      "status_bypass_status": {
+        "name": "Bypass status",
+        "state": {
+          "closed": "Closed",
+          "closing": "Closing",
+          "error": "Error",
+          "initialize": "Initializing",
+          "open": "Open",
+          "opening": "Opening"
+        }
+      },
+      "status_co2_1_value": {
+        "name": "CO₂ sensor 1"
+      },
+      "status_co2_2_value": {
+        "name": "CO₂ sensor 2"
+      },
+      "status_co2_3_value": {
+        "name": "CO₂ sensor 3"
+      },
+      "status_co2_4_value": {
+        "name": "CO₂ sensor 4"
+      },
+      "status_exhaust_fan_status": {
+        "name": "Exhaust fan status",
+        "state": {
+          "blocked": "[%key:component::brink_flair::entity::sensor::status_supply_fan_status::state::blocked%]",
+          "fan_error": "[%key:component::brink_flair::entity::sensor::status_supply_fan_status::state::fan_error%]",
+          "idle": "[%key:common::state::idle%]",
+          "no_communication": "[%key:component::brink_flair::entity::sensor::status_supply_fan_status::state::no_communication%]",
+          "running": "[%key:component::brink_flair::entity::sensor::status_supply_fan_status::state::running%]"
+        }
+      },
+      "status_frost_status": {
+        "name": "Frost status",
+        "state": {
+          "error": "Error",
+          "fan_control": "Fan control",
+          "fan_control_start_delay": "Fan control start delay",
+          "fan_control_wait_delay": "Fan control wait delay",
+          "fan_off": "Fan off",
+          "fan_off_delay": "Fan off delay",
+          "fan_restarting": "Fan restarting",
+          "frost_control_start_delay": "Frost control start delay",
+          "heating": "Heating",
+          "ice_detected_delay": "Ice detected delay",
+          "initialize": "Initializing",
+          "no_frost": "No frost",
+          "no_frost_delay": "No frost delay",
+          "powerup_delay": "Power-up delay",
+          "test_modus": "Test mode",
+          "wait_for_free_heater": "Waiting for free heater",
+          "wait_for_icing": "Waiting for icing"
+        }
+      },
+      "status_operation_mode": {
+        "name": "Operating mode",
+        "state": {
+          "auto_co2": "Auto (CO2)",
+          "auto_ebus": "Auto (eBus)",
+          "auto_lan_wlan_local": "Auto (LAN/WLAN local)",
+          "auto_lan_wlan_portal": "Auto (LAN/WLAN portal)",
+          "auto_modbus": "Auto (Modbus)",
+          "blocking_error": "Blocking error",
+          "bootloader": "Bootloader",
+          "bypass_boost": "Bypass boost",
+          "holiday": "Holiday",
+          "manual": "Manual",
+          "night_ventilation": "Night ventilation",
+          "non_blocking_error": "Non-blocking error",
+          "normal_boost": "Normal boost",
+          "party": "Party",
+          "standby": "Standby"
+        }
+      },
+      "status_preheater_status": {
+        "name": "Preheater status",
+        "state": {
+          "active": "[%key:common::state::active%]",
+          "inactive": "[%key:common::state::idle%]",
+          "initialize": "Initializing",
+          "test_mode": "Test mode"
+        }
+      },
+      "status_supply_fan_status": {
+        "name": "Supply fan status",
+        "state": {
+          "blocked": "Blocked",
+          "fan_error": "Fan error",
+          "idle": "[%key:common::state::idle%]",
+          "no_communication": "No communication",
+          "running": "Running"
+        }
+      },
+      "status_system_error": {
+        "name": "System error",
+        "state": {
+          "blocking_error": "Blocking error",
+          "no_error": "No error",
+          "non_blocking_error": "Non-blocking error",
+          "warning": "Warning"
+        }
+      },
+      "status_ventilation_mode": {
+        "name": "Ventilation mode",
+        "state": {
+          "auto": "[%key:common::state::auto%]",
+          "high": "[%key:common::state::high%]",
+          "holiday": "Holiday",
+          "low": "[%key:common::state::low%]",
+          "normal": "[%key:common::state::normal%]"
+        }
+      }
+    },
+    "switch": {
+      "settings_analogue_input_1_mode": {
+        "name": "Analogue input 1 enabled"
+      },
+      "settings_analogue_input_2_mode": {
+        "name": "Analogue input 2 enabled"
+      },
+      "settings_bypass_boost": {
+        "name": "Bypass boost"
+      },
+      "settings_co2_sensor_mode": {
+        "name": "CO₂ sensor mode"
+      },
+      "settings_cv_connected": {
+        "name": "CV exhaust connected"
+      },
+      "settings_digital_input_1_closed": {
+        "name": "Digital input 1 normally closed"
+      },
+      "settings_digital_input_2_closed": {
+        "name": "Digital input 2 normally closed"
+      },
+      "settings_display_as_switch": {
+        "name": "Display acts as switch"
+      },
+      "settings_geo_exchanger": {
+        "name": "Geo heat-exchanger"
+      },
+      "settings_imbalance_allowed": {
+        "name": "Imbalance allowed"
+      },
+      "settings_rht_sensor_mode": {
+        "name": "Humidity sensor mode"
+      },
+      "standby": {
+        "name": "Standby"
+      }
+    }
+  },
+  "exceptions": {
+    "bypass_override_blocked": {
+      "message": "Opening the bypass is blocked while the supply flow is {supply_volume} m³/h."
+    },
+    "communication_error": {
+      "message": "Error communicating with Brink Flair: {error}"
+    }
+  },
+  "selector": {
+    "baudrate": {
+      "options": {
+        "1200": "1200",
+        "2400": "2400",
+        "4800": "4800",
+        "9600": "9600",
+        "19200": "19200",
+        "38400": "38400",
+        "56000": "56000",
+        "115200": "115200"
+      }
+    },
+    "model": {
+      "options": {
+        "200": "Flair 200",
+        "225": "Flair 225",
+        "300": "Flair 300",
+        "325": "Flair 325",
+        "400": "Flair 400",
+        "450": "Flair 450",
+        "600": "Flair 600"
+      }
+    }
+  }
+}

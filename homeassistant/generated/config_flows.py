@@ -122,6 +122,7 @@ FLOWS = {
         "bosch_smart_camera",
         "braviatv",
         "bring",
+        "brink_flair",
         "broadlink",
         "brother",
         "brottsplatskartan",

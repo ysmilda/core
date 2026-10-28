@@ -1,0 +1,1084 @@
+# serializer version: 1
+# name: test_selects[select.brink_flair_300_bypass_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'auto',
+        'closed',
+        'open',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_bypass_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Bypass mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Bypass mode',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_bypass_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_bypass_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_bypass_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Bypass mode',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'auto',
+        'closed',
+        'open',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_bypass_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'auto',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_control_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'step',
+        'flow',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_control_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Control mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Control mode',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_control_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_control_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_control_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Control mode',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'step',
+        'flow',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_control_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'step',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_date_format-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'dd_mm_yyyy',
+        'mm_dd_yyyy',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_date_format',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Date format',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Date format',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_date_format',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_date_format',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_date_format-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Date format',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'dd_mm_yyyy',
+        'mm_dd_yyyy',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_date_format',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'dd_mm_yyyy',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_exhaust_fan-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_exhaust_fan',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 1 exhaust fan',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 1 exhaust fan',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_1_exhaust_fan',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_1_exhaust_fan',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_exhaust_fan-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 1 exhaust fan',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_exhaust_fan',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'fan_off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_function-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'on',
+        'on_if_bypass_open',
+        'bypass_control',
+        'external_valve_control',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_function',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 1 function',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 1 function',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_1_function',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_1_function',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_function-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 1 function',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'on',
+        'on_if_bypass_open',
+        'bypass_control',
+        'external_valve_control',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_function',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_supply_fan-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_supply_fan',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 1 supply fan',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 1 supply fan',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_1_supply_fan',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_1_supply_fan',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_1_supply_fan-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 1 supply fan',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_1_supply_fan',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'fan_off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_exhaust_fan-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_exhaust_fan',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 2 exhaust fan',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 2 exhaust fan',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_2_exhaust_fan',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_2_exhaust_fan',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_exhaust_fan-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 2 exhaust fan',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_exhaust_fan',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'fan_off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_function-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'on',
+        'on_if_bypass_open',
+        'bypass_control',
+        'external_valve_control',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_function',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 2 function',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 2 function',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_2_function',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_2_function',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_function-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 2 function',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'on',
+        'on_if_bypass_open',
+        'bypass_control',
+        'external_valve_control',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_function',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_supply_fan-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_supply_fan',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Digital input 2 supply fan',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Digital input 2 supply fan',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_digital_input_2_supply_fan',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_digital_input_2_supply_fan',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_digital_input_2_supply_fan-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Digital input 2 supply fan',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'fan_off',
+        'absolute_minimum_flow',
+        'predefined_value_mode_1',
+        'predefined_value_mode_2',
+        'predefined_value_mode_3',
+        'position_switch',
+        'absolute_maximum_flow',
+        'unchanged',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_digital_input_2_supply_fan',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'fan_off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_external_heater_mode-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'not_available',
+        'pre_heater',
+        'post_heater',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_external_heater_mode',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'External heater mode',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'External heater mode',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_external_heater_mode',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_external_heater_mode',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_external_heater_mode-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 External heater mode',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'not_available',
+        'pre_heater',
+        'post_heater',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_external_heater_mode',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'not_available',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_fan_control_method-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'constant_pwm',
+        'constant_flow',
+        'constant_mass_flow',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_fan_control_method',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Fan control method',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Fan control method',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_flow_type',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_flow_type',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_fan_control_method-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Fan control method',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'constant_pwm',
+        'constant_flow',
+        'constant_mass_flow',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_fan_control_method',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'constant_pwm',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_geo_valve_default_position-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'closed',
+        'open',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_geo_valve_default_position',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Geo valve default position',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Geo valve default position',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_geo_valve_default_position',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_geo_valve_default_position',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_geo_valve_default_position-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Geo valve default position',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'closed',
+        'open',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_geo_valve_default_position',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'closed',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_geo_valve_output-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'analogue_output_1',
+        'analogue_output_2',
+        'relay_output_1',
+        'relay_output_2',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_geo_valve_output',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Geo valve output',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Geo valve output',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_geo_valve_output',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_geo_valve_output',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_geo_valve_output-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Geo valve output',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'analogue_output_1',
+        'analogue_output_2',
+        'relay_output_1',
+        'relay_output_2',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_geo_valve_output',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'analogue_output_1',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_signal_output_function-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'filter_warning',
+        'error_status',
+        'filter_warning_and_error_status',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_signal_output_function',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Signal output function',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Signal output function',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_signal_output_function',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_signal_output_function',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_signal_output_function-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Signal output function',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'off',
+        'filter_warning',
+        'error_status',
+        'filter_warning_and_error_status',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_signal_output_function',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_time_notation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'hour_12',
+        'hour_24',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_time_notation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Time notation',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Time notation',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_time_notation',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_time_notation',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_time_notation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Time notation',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'hour_12',
+        'hour_24',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_time_notation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'hour_12',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_unit_language-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'english',
+        'dutch',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': <EntityCategory.CONFIG: 'config'>,
+    'entity_id': 'select.brink_flair_300_unit_language',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Unit language',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Unit language',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_language',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_language',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_unit_language-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Unit language',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'english',
+        'dutch',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_unit_language',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'english',
+  })
+# ---
+# name: test_selects[select.brink_flair_300_ventilation_level-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'absence',
+        'low',
+        'medium',
+        'high',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('brink_flair', '01JBRINKFLAIR0000000000000')]>,
+    'disabled_by': None,
+    'domain': 'select',
+    'entity_category': None,
+    'entity_id': 'select.brink_flair_300_ventilation_level',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'Ventilation level',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'Ventilation level',
+    'platform': 'brink_flair',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'settings_level',
+    'unique_id': '01JBRINKFLAIR0000000000000_settings_level',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_selects[select.brink_flair_300_ventilation_level-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'Brink Flair 300 Ventilation level',
+      <SelectEntityCapabilityAttribute.OPTIONS: 'options'>: list([
+        'absence',
+        'low',
+        'medium',
+        'high',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'select.brink_flair_300_ventilation_level',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'medium',
+  })
+# ---
